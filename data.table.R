@@ -347,7 +347,7 @@ dft[name1%like%"a"]
 #函数变化：union intersect setdiff setequal 前面都加了一个f
 
 #基础函数作用于两个向量，data.table中函数作用于两个data.table数据框，而且列名需要相同
-
+#
 x <- data.table(a=c(1,2,2,2,3,4,4))
 y <- data.table(a=c(2,3,4,4,4,5))
 x
