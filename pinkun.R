@@ -36,6 +36,7 @@ X4_2$年级<-'4_2'
 X5_1$年级<-'5_1'
 X5_2$年级<-'5_2'
 
+
 a<-rbind( merge(X1_1,data_all,by=c('id_no')),
   merge(X1_2,data_all,by=c('id_no')),
   merge(X2_1,data_all,by=c('id_no')),
