@@ -1,5 +1,5 @@
 #20180809 修改
-#20000
+#2018
 ?ChickWeight
 data<-ChickWeight
 head(data)
