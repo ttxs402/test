@@ -396,3 +396,5 @@ DT[,c:=18:13] # 改变其中一个
 DT;assign_DT # 通过普通赋值符号产生的数据框也跟着改变了
 copy_DT # 通过copy深复制才没有被影响
 rm(DT,assign_DT,copy_DT)
+##end
+##end
