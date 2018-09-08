@@ -1,6 +1,7 @@
 library(readxl)
 library(stringr)
 library(openxlsx)
+library(rmarkdown)
 X1_1 <- read_excel("C:/Users/zhangguoliang/Desktop/贫困比对/全校学生/1_1.xlsx")
 X1_2 <- read_excel("C:/Users/zhangguoliang/Desktop/贫困比对/全校学生/1_2.xlsx")
 X2_1 <- read_excel("C:/Users/zhangguoliang/Desktop/贫困比对/全校学生/2_1.xlsx")
