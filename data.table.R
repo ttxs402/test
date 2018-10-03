@@ -12,7 +12,7 @@
 # data.table提取等功能总结
 # data.table计算、分组计算
 # data.table的merge合并
-
+#20181003
 name1 <- c("Bob","Mary","Jane","Kim")
 name2 <- c("Bob","Mary","Kim","Jane")
 weight <- c(60,65,45,55)
