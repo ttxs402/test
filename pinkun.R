@@ -59,5 +59,5 @@ library(openxlsx)
 openxlsx::write.xlsx(a,file='pinkun.xlsx')
 write_excel_csv(a,path = "C:/Users/zhangguoliang/Documents/a.xlsx")
 getwd() 
-
+#20190926
 
