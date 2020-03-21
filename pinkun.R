@@ -7,14 +7,21 @@ library(openxlsx)
 data_all_nc <- read_excel("C:/Users/guoliang.zhang/Desktop/贫困比对/20200320比对/2020.03(农村低保数据库).xls")
 data_all_cs <- read_excel("C:/Users/guoliang.zhang/Desktop/贫困比对/20200320比对/2020.03(城市低保数据库).xls")
 data_all_fp <- read_excel("C:/Users/guoliang.zhang/Desktop/贫困比对/20200320比对/2019.12.02（扶贫数据库）.xls")
+data_all_bh <- read_excel("C:/Users/guoliang.zhang/Desktop/贫困比对/20200320比对/标红.xlsx")
+
 data_all_nc1 <- data_all_nc[,c('身份证号','姓名')]
 data_all_cs1 <- data_all_cs[,c('身份证号','姓名')]
 data_all_fp1 <- data_all_fp[,c('证件号码','姓名')]
+data_all_bh <- data_all_bh[,c('证件号码','姓名')]
+
+names(data_all_bh) <- c('身份证号','姓名')
+
 names(data_all_fp1) <- names(data_all_cs1)
 data_all_nc1[,'贫困类型'] <- '农村'
 data_all_cs1[,'贫困类型'] <- '城市'
 data_all_fp1[,'贫困类型'] <- '扶贫'
 data_all <- rbind(data_all_nc1,data_all_cs1,data_all_fp1)
+data_all <- data_all_bh
 
 #2、读取学生数据
 X1_1 <- read_excel("C:/Users/guoliang.zhang/Desktop/贫困比对/20200320比对/2019年秋季学生/2019年秋季学生/1_1.xlsx")
