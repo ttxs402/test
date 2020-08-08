@@ -101,3 +101,4 @@ aggregate(Wind	~	Month,	data	=	airquality,
 #计算出每天风速与当月风速均值之差使用dplyr
 airquality %>% group_by(Month) %>% mutate(medwind=median(Wind)) %>% mutate(diff=medwind-Wind)
 
+20200808
