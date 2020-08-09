@@ -1,4 +1,4 @@
-
+#20200808
 library(splitstackshape)
 View(concat.test) #example data
 temp <- head(concat.test)
@@ -41,6 +41,5 @@ prop.table( xtabs(value ~., dfm), 1 )
 
 library(reshape)
 library(plyr)
-
 df1 <- ddply(dfm, .(ID1), summarise, ID2 = ID2, pct = value / sum(value))
 dfc <- cast(df1, ID1 ~ ID2)
